@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio - Denise Zigani</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="profile-photo">
+               <img src="photo.jpg.jpeg" alt="Denise Zigani">
+            </div>
+
+            <h1 class="name">DENISE ZIGANI</h1>
+            <p class="tagline">Ingénieure en Génie des Systèmes Numériques</p>
+
+            <div class="bio-section">
+                <p>
+                    Je crée le lien entre le <strong>matériel et le numérique</strong>. 
+                    Mon rôle est de concevoir des systèmes simples et efficaces pour répondre aux besoins réels des entreprises.
+                </p>
+                <p>
+                    Je m'engage à apporter ma <strong>rigueur</strong> et ma réactivité pour garantir la 
+                    performance et la fiabilité de vos infrastructures numériques.
+                </p>
+            </div>
+
+           <div class="action-bar" style="display: flex; gap: 10px; justify-content: center; align-items: center; flex-wrap: wrap;">
+    <a href="javascript:void(0);" class="action-item" onclick="togglePortfolio()">Compétences & Réalisations</a>
+    <a href="javascript:void(0);" class="action-item" onclick="toggleContact()">Me Contacter</a>
+    
+    <div style="display: flex; align-items: stretch; border-radius: 50px; overflow: hidden; border: 2px solid #2ecc71;">
+        <a href="CV_ZIGANI_Denise.pdf" target="_blank" 
+           style="background: #2ecc71; color: white; padding: 10px 15px; text-decoration: none; font-weight: bold; font-size: 0.9rem; border-right: 1px solid rgba(255,255,255,0.3);">
+            Voir CV
+        </a>
+        <a href="CV_ZIGANI_Denise.pdf" download 
+           style="background: #27ae60; color: white; padding: 10px 15px; text-decoration: none; font-weight: bold; font-size: 0.9rem;">
+            Télécharger CV
+        </a>
+    </div>
+</div>
+    </header>
+
+    <section id="contact-section" class="main-content" style="display: none;">
+        <div class="card" style="max-width: 600px; margin: 0 auto; text-align: center; padding: 40px;">
+            <h3 style="color: #2ecc71; border-bottom: 1px solid #334155; padding-bottom: 15px; margin-bottom: 30px;">
+                 Me Contacter
+            </h3>
+            
+            <div style="text-align: left; display: inline-block; width: 100%; max-width: 400px;">
+                
+                <div style="margin-bottom: 30px;">
+                    <p style="margin-bottom: 15px;">
+                        <strong style="color: #2ecc71; display: block; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px;">Email</strong>
+                        <a href="mailto:denisezigani9@gmail.com" style="color: #ffffff; text-decoration: none; font-size: 1.1rem;">denisezigani9@gmail.com</a>
+                    </p>
+
+                    <p style="margin-bottom: 15px;">
+                        <strong style="color: #2ecc71; display: block; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px;">Téléphone</strong>
+                        <span style="color: #ffffff; font-size: 1.1rem;">+226 55 31 20 66</span>
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 30px; padding: 20px; background: rgba(0, 119, 181, 0.1); border-radius: 8px; border: 1px solid #0077b5;">
+                    <strong style="color: #ffffff; display: block; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">🔗 Réseau Professionnel</strong>
+                    <a href="https://www.linkedin.com/in/denise-zigani-72a162397" target="_blank" 
+                       style="display: inline-block; color: #0077b5; text-decoration: none; font-weight: bold; font-size: 1rem;">
+                       Consulter mon profil LinkedIn →
+                    </a>
+                </div>
+
+                <div style="padding-top: 10px;">
+                    <p>
+                        <strong style="color: #2ecc71; display: block; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px;">📍 Localisation</strong>
+                        <span style="color: #cbd5e1;">Ouagadougou, Burkina Faso</span>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio-section" class="main-content" style="display: none;">
+        <div class="portfolio-grid">
+            <div class="card">
+                <h3 style="color: #2ecc71; margin-bottom: 25px;">Mes Compétences</h3>
+                <ul class="skill-list" style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 20px; padding-left: 15px; border-left: 3px solid #2ecc71;">
+                        <strong style="color: #ffffff; display: block; margin-bottom: 5px;">Réseaux & Fibre Optique :</strong>
+                        <span style="color: #cbd5e1;">Déploiement, soudure et mesures de fibre. Configuration réseaux (Cisco).</span>
+                    </li>
+                    <li style="margin-bottom: 20px; padding-left: 15px; border-left: 3px solid #2ecc71;">
+                        <strong style="color: #ffffff; display: block; margin-bottom: 5px;">Systèmes & Programmations :</strong>
+                        <span style="color: #cbd5e1;">Fondamentaux en Python, Java, C et prototypage via Arduino.</span>
+                    </li>
+                    <li style="margin-bottom: 20px; padding-left: 15px; border-left: 3px solid #2ecc71;">
+                        <strong style="color: #ffffff; display: block; margin-bottom: 5px;">Communication & Langues :</strong>
+                        <span style="color: #cbd5e1;">Maîtrise des techniques de communication professionnelles et les bases en anglais.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3 style="color: #2ecc71; margin-bottom: 25px;">Mes Réalisations</h3>
+                <div class="project-item" style="margin-bottom: 20px; padding-left: 15px; border-left: 3px solid #2ecc71;">
+                    <h4 style="color: #ffffff; margin-bottom: 5px;">Maison intelligente à commande vocale</h4>
+                    <p style="color: #cbd5e1;">Réalisation via Arduino.</p>
+                </div>
+                <div class="project-item" style="margin-bottom: 20px; padding-left: 15px; border-left: 3px solid #2ecc71;">
+                    <h4 style="color: #ffffff; margin-bottom: 5px;">Contrôle d'accès sécurisé - ISGE</h4>
+                    <p style="color: #cbd5e1;">Étude et proposition de solutions techniques pour la gestion automatisée de l'accès à l'institut.</p>
+                </div>
+                <div class="project-item" style="margin-bottom: 20px; padding-left: 15px; border-left: 3px solid #2ecc71;">
+                    <h4 style="color: #ffffff; margin-bottom: 5px;">Portfolio numérique interactif</h4>
+                    <p style="color: #cbd5e1;">Développement de ce site vitrine en HTML/CSS/JS pour mon profil professionnel.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px; padding: 20px; border-top: 1px solid #334155;">
+            <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1rem; color: #ffffff; letter-spacing: 0.5px; text-transform: none;">
+                Retrouvez l'intégralité de mes compétences et le détail de mes projets sur mon profil LinkedIn.
+            </p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
